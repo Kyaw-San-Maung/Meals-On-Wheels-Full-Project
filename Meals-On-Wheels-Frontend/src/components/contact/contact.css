@@ -1,0 +1,24 @@
+.contact-container {
+  padding: 3rem 0 12rem 0;
+  position: relative;
+}
+
+.contact-container .flex {
+  justify-content: space-around;
+  gap: 2rem;
+}
+.contact-container .left {
+  width: 40%;
+}
+
+.send-arrow {
+  position: absolute;
+  width: 440px;
+  /* height: 400px; */
+  left: 40%;
+  bottom: -3rem;
+}
+
+.contact-container button {
+  padding: 10px 40px;
+}

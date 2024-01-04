@@ -1,0 +1,310 @@
+/*  Inter Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  /* Colors */
+  --bg-color: #f8f8f8;
+  --primary-color: #ff6347;
+  --secondary-color: #4caf50;
+  --third-color: #ffa500;
+
+  /* Btn colors */
+  --btn-primary-color: #007bff;
+  --btn-secondary-color: #8a2be2;
+
+  /* Text colors */
+  --text-primary-color: #333333;
+  --text-secondary-color: #555555;
+  --white-color: #ffffff;
+
+  /* Font size */
+  /* 24.00px → 38.00px */
+  --title-1: clamp(1.5rem, 1.1957rem + 1.5217vw, 2.375rem);
+  /* 20.00px → 32.00px */
+  --title-2: clamp(1.25rem, 0.9891rem + 1.3043vw, 2rem);
+  /* 18.00px → 28.00px */
+  --title-3: clamp(1.125rem, 0.9076rem + 1.087vw, 1.75rem);
+  /* 16.00px → 20.00px */
+  --normal-font: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+  /* 14.00px → 18.00px */
+  --para-font: clamp(0.875rem, 0.788rem + 0.4348vw, 1.125rem);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+body,
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--text-primary-color);
+}
+
+/* ====================
+    Container
+    =================== */
+.container {
+  width: min(85%, 1400px);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.btn img {
+  width: 30px;
+}
+
+/* ================
+    Font 
+    =============== */
+h1 {
+  font-size: var(--title-1);
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: var(--title-2);
+  font-weight: 700;
+  line-height: 150%;
+}
+h3 {
+  font-size: var(--title-3);
+  font-weight: 600;
+  line-height: 150%;
+}
+
+span {
+  color: var(--primary-color);
+  font-size: var(--title-1);
+}
+
+a,
+.normal {
+  font-size: var(--normal-font);
+  font-weight: 500;
+  line-height: 110%;
+  color: var(--text-primary-color);
+}
+
+p,
+.para-font {
+  font-size: var(--para-font);
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text-secondary-color);
+}
+
+.text-orange {
+  color: var(--primary-color);
+}
+
+.text-green {
+  color: var(--secondary-color);
+}
+
+.text-violet {
+  color: var(--btn-secondary-color);
+}
+
+/* ================
+    Button 
+    =============== */
+.btn {
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: var(--normal-font);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-flex {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 15px;
+}
+
+/* ==========================
+    Input Styling
+    ======================= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+input,
+textarea {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 3px solid var(--primary-color);
+  font-size: 18px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+form .form-btn {
+  margin-top: 1rem;
+  padding: 15px 4rem;
+}
+
+/* Orange Button */
+.primary,
+.outline:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.outline {
+  border-color: var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.green {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.blue {
+  background-color: var(--btn-primary-color);
+  border-color: var(--btn-primary-color);
+  color: var(--white-color);
+}
+
+.black {
+  background-color: var(--text-primary-color);
+  border-color: var(--text-primary-color);
+  color: var(--white-color);
+}
+
+/* Violet button */
+.secondary {
+  border-color: var(--btn-secondary-color);
+  background-color: var(--btn-secondary-color);
+  color: var(--white-color);
+}
+
+.secondary-outline {
+  border-color: var(--btn-secondary-color);
+  background-color: transparent;
+  color: var(--white-color);
+}
+
+/* ========================
+    Loading
+    ======================= */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}

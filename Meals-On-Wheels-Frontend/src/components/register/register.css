@@ -1,0 +1,73 @@
+.register-form {
+  width: 40%;
+  padding-bottom: 4rem;
+}
+
+.violet-form input,
+.violet-form textarea {
+  border-color: var(--btn-secondary-color);
+}
+.black-form input,
+.black-form textarea {
+  border-color: var(--text-primary-color);
+}
+.green-form input,
+.green-form textarea {
+  border-color: var(--secondary-color);
+}
+
+.register-photo {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.background-div {
+  background-color: hsla(270, 69%, 57%, 0.451);
+  border-radius: 10px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 2rem;
+}
+
+.btn-container p {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.btn-container p a {
+  padding: 0 1rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/* --------------
+    Line (Or)
+    ------------- */
+.orLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orLine::before,
+.orLine::after {
+  content: "";
+  height: 1.5px;
+  width: 48%;
+  background-color: var(--btn-secondary-color);
+}
+
+.orLine::before {
+  margin-inline-end: 20px;
+}
+
+.orLine::after {
+  margin-inline-start: 20px;
+}
