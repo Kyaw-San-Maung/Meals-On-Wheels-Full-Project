@@ -29,7 +29,7 @@ This repository contains the full-stack development project for the MerryMeal ap
 
 ### Design
 
-# Desinged By Min Khant
+# Developed by Kyaw San Maung, Min Khant, Yell Min Thu, Myint Myat
 
 ![image](https://github.com/Rayy-007/meals-on-wheel-project/assets/113674028/d30a489b-f4c9-4f85-94ef-cd3b9e972ec5)
 
